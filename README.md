@@ -6,9 +6,9 @@
 [![License: MIT][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-## See the Live version here - > [Live Link](https://fierce-tundra-31623.herokuapp.com)
+## See the Live version here - > [Live Link](https://floating-spire-38271.herokuapp.com)
 
-<img src="./app/assets/images/2.JPG" width="1200px" height="500px" />
+<img src="./app/assets/images/1.JPG" width="1200px" height="500px" />
 
 ## Built With
 
