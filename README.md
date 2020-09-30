@@ -8,7 +8,7 @@
 
 ## See the Live version here - > [Live Link](https://floating-spire-38271.herokuapp.com)
 
-<img src="./app/assets/images/1.JPG" width="1200px" height="500px" />
+<img src="./app/assets/images/1.JPG" width="100%" height="500px" />
 
 ## Built With
 
