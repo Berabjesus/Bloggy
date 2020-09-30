@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bloggy</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'reset', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <main class="container">
+    <% if flash[:notice]%>
+      <div class="alert alert-info bg-light text-center">
+        <strong><%= notice%></strong>
+      </div>
+    <%end%>
+    <% if flash[:alert]%>
+      <div class="alert alert-warning text-center">
+        <strong><%= alert.html_safe%></strong>
+      </div>
+    <%end%>
+    <%= yield %>
+  </main>
+  </body>
+</html>

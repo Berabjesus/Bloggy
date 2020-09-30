@@ -1,0 +1,42 @@
+<%= render partial: "header", locals: {title: 'Welcome to Bloggy'} %>
+
+<aside class="aside pos-fixed col-xl-2 border-custom border-width-1 border-top-0 px-0">
+  <div class="aside_container pos-abs col-xl-12 px-0 text-center text-light  h-100 d-flex flex-column pt-5">
+    <div class="mb-5">
+      <h2 class="text-center">
+        Hi <%=@user.name%>!
+      </h2>
+    </div>
+    <div class="border-bottom pb-3">
+      <h1>Bloggy</h1> 
+      <h3>Your Blog Matters</h3>
+    </div>
+    <div>
+      <%= link_to "Create a Blog", new_blog_path, class: 'btn btn-block btn-info mt-2' %>
+    </div>
+  </div>
+</aside>
+
+<div class="main row mt-5 pt-3">
+  <div class="flex-column col-xl-11 offset-xl-1 px-0">
+    <h4 class="bg-light text-center">Displaying <%= pluralize(@blogs.count, 'Blog')%></h4>
+    <% @blogs.order('created_at DESC').each do |blog|%>
+      <%= link_to blog_path(blog) do %>
+        <div class="blog-container card mt-2 mb-2 hover-scale">
+          <div class="card-title d-flex bg-light text-dark justify-content-between">
+            <h2>Title: <%= blog.title%></h2>
+            <h4>Author: <%= blog.user.name %></h4>
+            <p>Created <%= distance_of_time_in_words(Time.now, blog.created_at)%> ago</p>
+          </div>
+          <div class="card-text">
+            <p class="blog_content-font"><%= blog.content%></p>
+          </div>
+          <div class="card-footer p-0 mx-auto bg-white border-0">
+            <h5>Read More</h5>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+

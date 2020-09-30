@@ -1,0 +1,72 @@
+// defaults
+.border-custom {
+  border: 1px solid #343a40;
+}
+.border-width-1 {
+  border-width: 4px;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.hover-scale:hover{
+  transform: scale(1.01);
+  transition: all 0.2s linear;
+  border: 1px green solid;
+}
+
+// body
+.main {
+  height: auto;
+}
+
+.aside {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 99;
+  background-color: #343a40;
+}
+
+.aside_container {
+  top: 10%;
+}
+
+.blog_content-font {
+  font-size: 18px;
+}
+
+.blog-container {
+  position: relative;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.blog-container::after{
+  position: absolute;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 8vh;
+  padding: 10px 0 0 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.199) 50%, rgba(224, 217, 217, 0.63));
+}
+
+.blog-container p {
+  overflow: hidden;
+}
+
+.card-text {
+  overflow: hidden;
+
+}
+

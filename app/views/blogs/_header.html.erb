@@ -1,0 +1,17 @@
+<header class="row mb-5">
+  <nav class="nav nav-tabs bg-dark d-flex justify-content-between w-100 text-light fixed-top">
+    <div class="d-flex">
+      <li class="nav-item">
+        <%= link_to  "Home", blogs_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tags</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Other</a>
+      </li>
+    </div>
+    <h1 class="pb-1"><%= title %></h1>
+    <%= link_to  "Logout", session_path(@user.id), method: :delete, class: 'nav-link border m-1' %>
+  </nav>
+</header>

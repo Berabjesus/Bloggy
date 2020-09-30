@@ -1,0 +1,13 @@
+  <%= form_for [@blog, @comment], html: {class: 'form-horizontal'} do |f|%>
+  <div class = 'form-group'>
+    <%= f.label :name, "Your Name"%>
+    <%= f.text_field :name, class: 'form-control'%>
+  </div>
+
+  <div class = 'form-group'>
+    <%= f.label :comment%>
+    <%= f.text_area :comment,  class: 'form-control',  cols: "100", rows: "3"%>
+  </div>
+
+  <%= f.submit%>
+  <%end%>
