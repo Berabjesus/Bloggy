@@ -44,16 +44,16 @@ Give a ⭐️ if you like this project!
 This project is [MIT](LICENSE) licensed.
 
 
-<!-- 
+
 [contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Twitter-Clone
-[contributors-url]: https://github.com/Berabjesus/Twitter-Clone/contributors
+[contributors-url]: https://github.com/Berabjesus/Bloggy/contributors
 [forks-shield]: https://img.shields.io/github/forks/Berabjesus/Twitter-Clone
-[forks-url]: https://github.com/Berabjesus/Twitter-Clone/network/members
+[forks-url]: https://github.com/Berabjesus/Bloggy/network/members
 [stars-shield]: https://img.shields.io/github/stars/Berabjesus/Twitter-Clone
-[stars-url]: https://github.com/Berabjesus/Twitter-Clone/stargazers
+[stars-url]: https://github.com/Berabjesus/Bloggy/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Berabjesus/Twitter-Clone
-[issues-url]: https://github.com/Berabjesus/Twitter-Clone/issues
+[issues-url]: https://github.com/Berabjesus/Bloggy/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license-url]: https://github.com/Berabjesus/Twitter-Clone/development/LICENSE
+[license-url]: https://github.com/Berabjesus/Bloggy/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/bereket-beshane-a1b75a1a9/ -->
+[linkedin-url]: https://www.linkedin.com/in/bereket-beshane-a1b75a1a9/
