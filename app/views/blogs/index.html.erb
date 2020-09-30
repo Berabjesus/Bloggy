@@ -27,7 +27,11 @@
         <div class="blog-container card mt-2 mb-2 hover-scale">
           <div class="card-title d-flex bg-light text-dark justify-content-between">
             <h2>Title: <%= blog.title%></h2>
-            <h4>Author: <%= blog.user.name %></h4>
+            <% unless @user.nil?%>
+              <h4>Author: <%= blog.user.name%></h4>
+            <%else%>
+              <h4>Author: anonymous</h4>
+            <%end%>
             <p>Created <%= distance_of_time_in_words(Time.now, blog.created_at)%> ago</p>
           </div>
           <div class="card-text">
