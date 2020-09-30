@@ -1,4 +1,5 @@
-# Twitter Clone
+# Bloggy
+## Side project to implement Rails Session without Devise
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
