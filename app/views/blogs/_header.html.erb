@@ -12,6 +12,12 @@
       </li>
     </div>
     <h1 class="pb-1"><%= title %></h1>
-    <%= link_to  "Logout", session_path(@user.id), method: :delete, class: 'nav-link border m-1' %>
+    <%= link_to  "Logout", session_path(@user.id), method: :delete, class: 'nav-link border m-1' unless @user.nil?%>
+    <% if @user.nil? %>
+      <div class = "d-flex">
+        <%= link_to  "Sign Up", new_user_path, class: 'nav-link border m-1' %>
+        <%= link_to  "Login", sessions_new_path, class: 'nav-link border m-1' if @user.nil?%>
+      </div>
+    <%end%>
   </nav>
 </header>

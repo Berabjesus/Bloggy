@@ -11,7 +11,7 @@
   </div>
 </div>
   
-<% if @user.id == @blog.user_id%>
+<% if !@user.nil? && @user.id == @blog.user_id%>
   <div class="row border-bottom pb-3">
     <%= link_to "Edit", edit_blog_path, class: 'btn btn-info mr-2'%>
     <%= link_to "Delete", blog_path, method: :delete, class: 'btn btn-warning', data: {confirm: "Do you really want to delete this?"}%>

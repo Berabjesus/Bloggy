@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    if session[:bloggy_user_id_session].nil?
+    if session[:bloggy_user_id_session].nil? && session[:guest_session].nil?
       redirect_to sessions_new_path, notice: 'Login or Sign up to view blogs.' 
     end
     @blogs = Blog.all
